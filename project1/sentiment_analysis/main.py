@@ -118,3 +118,18 @@ wordlist   = [word for (idx, word) in sorted(zip(dictionary.values(), dictionary
 sorted_word_features = utils.most_explanatory_word(best_theta, wordlist)
 print("Most Explanatory Word Features\n")
 print(sorted_word_features[:10])
+
+
+
+
+'''Some additional features that you might want to explore are:
+- Length of the text
+- Occurrence of CAPITALIZED words
+- Word embeddings
+Besides addingn a new features, you can also change the original unigram feature set:
+
+- Threshold the number of times a word should appear in a dataset before adding them to the dictionary.
+(words that occurs less than 3 times could be considered irrelevant, can be removed)--> prevents overfitting
+
+
+'''
